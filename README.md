@@ -59,6 +59,10 @@ Program ini juga menyertakan visualisasi data dengan Smith Chart untuk memetakan
 pip install numpy matplotlib scikit-rf PyQt5
 ```
 
+## Icon
+
+![icon](https://github.com/user-attachments/assets/4153ae1b-6502-4761-bff2-a52458b0173b)
+
 ## FlowChart
 
 ```mermaid
