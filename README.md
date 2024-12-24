@@ -7,6 +7,7 @@
 ) ![](https://img.shields.io/badge/RISKI-ISNA-yellow
 ) ![](https://img.shields.io/badge/BERTA-NAULI-pink
 ) ![](https://img.shields.io/badge/python-v3.11.9-blue)
+![](https://img.shields.io/badge/SISTEM-TRANSMISI-red)
 
 ### ENGINEERS
 
@@ -17,11 +18,31 @@
 
 ### ADVISOR
 
-- Viving Frendiana           (2303421020);
+- Viving Frendiana           (199001152019032011);
 
 ## TUJUAN
 
 Program ini bertujuan untuk menyediakan alat bantu interaktif berbasis GUI yang menghitung dan menganalisis parameter komunikasi RF, seperti koefisien refleksi, VSWR, daya, dan return loss. Dilengkapi dengan visualisasi Smith Chart dan pie chart, program ini mempermudah pengguna dalam memahami karakteristik impedansi dan distribusi daya secara intuitif dan efisien.
+
+## Program Code Description
+
+Kode ini memanfaatkan berbagai library untuk membangun aplikasi analisis impedansi. **NumPy** digunakan untuk menangani operasi matematika kompleks secara efisien, **matplotlib** untuk visualisasi data seperti grafik pie dan diagram polar, dan **scikit-rf** untuk menggambar **Smith Chart**, alat visual yang sering digunakan dalam analisis impedansi dan jaringan RF (Radio Frequency).
+
+Aplikasi ini menghitung beberapa parameter penting:  
+- **Koefisien Refleksi (Gamma):** Mengukur perbandingan antara gelombang yang dipantulkan dan yang diteruskan.  
+- **VSWR (Voltage Standing Wave Ratio):** Mengindikasikan tingkat kesesuaian impedansi.  
+- **Daya Diserap dan Dipantulkan:** Menggambarkan distribusi daya dalam jaringan.  
+- **Return Loss:** Menunjukkan efisiensi transfer daya, dinyatakan dalam dB.  
+
+Dengan integrasi dari berbagai library, aplikasi ini tidak hanya mampu menghitung parameter-parameter tersebut, tetapi juga menyajikan visualisasi data untuk membantu memahami hasil analisis jaringan secara intuitif.
+
+## Install Libraries
+
+![Libraries](https://github.com/user-attachments/assets/0cd190e7-d75b-4c68-82d2-7199bf17cb46)
+
+```
+pip install numpy matplotlib scikit-rf PyQt5
+```
 
 ## KOMPONEN KALKULASI
 
@@ -53,17 +74,24 @@ Program ini memiliki beberapa komponen kalkulasi utama, yaitu:
 
 Program ini juga menyertakan visualisasi data dengan Smith Chart untuk memetakan (Γ) dan pie chart untuk menunjukkan distribusi daya.
 
-## Install Libraries
+## Hasil Run
+### **Kalkulator Hitung**
 
-```
-pip install numpy matplotlib scikit-rf PyQt5
-```
+![Screenshot 2024-12-24 230140](https://github.com/user-attachments/assets/d5699e26-8d0d-47ee-ac9e-a865ff5674a1)
 
-## Icon
+### **Pie Chart Daya**
+
+![Screenshot 2024-12-24 230928](https://github.com/user-attachments/assets/759e1eec-3851-40d6-8aff-daf0006a2387)
+
+### **Smithchart Impedansi Normasilasi (ZL')**
+
+![Screenshot 2024-12-24 231410](https://github.com/user-attachments/assets/d1ea0017-ae2a-4704-bf18-e84da697ce82)
+
+## Window Icon
 
 ![icon](https://github.com/user-attachments/assets/4153ae1b-6502-4761-bff2-a52458b0173b)
 
-## FlowChart
+## Alternate FlowChart
 
 ```mermaid
 flowchart TD
@@ -94,3 +122,5 @@ Kesimpulannya, program ini menyediakan solusi yang praktis dan interaktif untuk 
 
 
 ### End
+
+Terima Kasih dan Best Regards kepada semua pihak yang membantu selesainya proyek.
